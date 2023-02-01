@@ -1,0 +1,23 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-test": "sass --watch sass:./src/estilos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BR2E/portafolio.git"
+  },
+  "keywords": [],
+  "author": "Efren Eduardo Barraza Ruiz (BR2E) <Efren.BR2E@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BR2E/portafolio/issues"
+  },
+  "homepage": "https://github.com/BR2E/portafolio#readme",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
+}
