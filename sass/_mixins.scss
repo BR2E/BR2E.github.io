@@ -1,0 +1,22 @@
+@mixin crearFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin iconosHeader {
+    position: absolute;
+    width: 9rem;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+@mixin positionIconLeft($y, $x) {
+    top: $y;
+    left: $x;
+}
+
+@mixin positionIconRight($y, $x) {
+    top: $y;
+    right: $x;
+}

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass-test": "sass --watch sass:./src/estilos"
+    "sass-test": "sass --watch sass:./src/estilos",
+    "webpack-test": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,11 @@
   },
   "homepage": "https://github.com/BR2E/portafolio#readme",
   "devDependencies": {
-    "sass": "^1.58.0"
+    "sass": "^1.58.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4"
   }
 }

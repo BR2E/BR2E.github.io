@@ -1,0 +1,83 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+
+    &__info {
+        width: 100%;
+        height: 100%;
+        @include crearFlex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    &__info--title {
+        font-size: 6rem;
+        font-family: $fuente1;
+        font-weight: 400;
+        margin-bottom: 5rem;
+        color: $verde;
+        letter-spacing: .5rem;
+        text-align: center;
+    }
+
+    &__info--nombre {
+        font-size: 2.5rem;
+        font-family: $fuente2;
+        font-weight: 400;
+        color: $verde;
+        letter-spacing: .2rem;
+    }
+
+    &__arrow--bottom1 {
+        width: 100px;
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    &__arrow--bottom2 {
+        width: 100px;
+        position: absolute;
+        bottom: 1rem;
+    }
+
+    &__animation{
+        // position: relative;
+    }
+    &__icon--css {
+        @include iconosHeader;
+        @include positionIconLeft(50%, -2rem);
+    }
+
+    &__icon--git {
+        @include iconosHeader;
+        @include positionIconRight(20%, 0);
+    }
+
+    &__icon--html {
+        @include iconosHeader;
+        @include positionIconLeft(20%, -2rem);
+    }
+
+    &__icon--js {
+        @include iconosHeader;
+        @include positionIconLeft(10%, 40%);
+    }
+
+    &__icon--react {
+        @include iconosHeader;
+        @include positionIconLeft(80%, 2rem);
+    }
+
+    &__icon--sass {
+        @include iconosHeader;
+        @include positionIconRight(50%, 0);
+    }
+
+    &__icon--webPack {
+        @include iconosHeader;
+        @include positionIconRight(80%, 2rem);
+    }
+}
