@@ -9,9 +9,7 @@
    }
    &__title{
       margin: 15rem 0 3rem;
-      font-size: 3rem;
-      color: $verde;
-      letter-spacing: 1rem;
+      @include title;
    }
    &__text{
       font-size: 1.6rem;

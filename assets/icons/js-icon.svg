@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <path d="M 249.202 106.059 L 361.039 143.144 L 430.158 240.233 L 430.158 360.243 L 361.039 457.332 L 249.202 494.417 L 137.365 457.332 L 68.246 360.243 L 68.246 240.233 L 137.365 143.144 Z" style="stroke: rgb(0, 0, 0);" bx:shape="n-gon 249.202 300.238 190.268 194.179 10 0 1@259cd9b2"/>
-  <path d="M 248.405 129.672 L 349.645 162.416 L 412.215 248.142 L 412.215 354.106 L 349.645 439.832 L 248.405 472.576 L 147.165 439.832 L 84.595 354.106 L 84.595 248.142 L 147.165 162.416 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 255, 255);" bx:shape="n-gon 248.405 301.124 172.24 171.452 10 0 1@9da97e0a"/>
+  <path d="M 248.405 129.672 L 349.645 162.416 L 412.215 248.142 L 412.215 354.106 L 349.645 439.832 L 248.405 472.576 L 147.165 439.832 L 84.595 354.106 L 84.595 248.142 L 147.165 162.416 Z" style="stroke: rgb(0, 0, 0); fill: rgb(51, 51, 51);" bx:shape="n-gon 248.405 301.124 172.24 171.452 10 0 1@9da97e0a"/>
   <text style="font-family: Ubuntu; font-size: 300px; white-space: pre;" x="243.009" y="400.85">s</text>
   <text style="font-family: Ubuntu; font-size: 320px; white-space: pre;" x="107.339" y="404.838">J</text>
 </svg>

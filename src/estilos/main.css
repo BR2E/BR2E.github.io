@@ -128,6 +128,7 @@ html {
   font-size: 3rem;
   color: #02D28F;
   letter-spacing: 1rem;
+  font-family: "Roboto", sans-serif;
 }
 .descripcion__text {
   font-size: 1.6rem;
@@ -135,6 +136,28 @@ html {
   text-align: center;
   padding: 0 3rem;
   opacity: 0.7;
+}
+
+.proyectos {
+  margin-top: 10rem;
+}
+.proyectos__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.proyectos__info--title {
+  font-size: 3rem;
+  color: #02D28F;
+  letter-spacing: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.proyectos__js {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */

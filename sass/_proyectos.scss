@@ -1,0 +1,17 @@
+.proyectos {
+    margin-top: 10rem;
+
+    &__info {
+        @include crearFlex;
+        flex-direction: column
+    }
+
+    &__info--title {
+        @include title;
+    }
+
+    &__js {
+        @include crearFlex;
+        flex-direction: column;
+    }
+}
