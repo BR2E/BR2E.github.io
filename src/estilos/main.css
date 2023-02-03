@@ -111,4 +111,30 @@ html {
   right: 2rem;
 }
 
+.descripcion {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.descripcion__iconSetting {
+  position: absolute;
+  width: 10rem;
+  margin-bottom: 10rem;
+}
+.descripcion__title {
+  margin: 15rem 0 3rem;
+  font-size: 3rem;
+  color: #02D28F;
+  letter-spacing: 1rem;
+}
+.descripcion__text {
+  font-size: 1.6rem;
+  color: #02D28F;
+  text-align: center;
+  padding: 0 3rem;
+  opacity: 0.7;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -20,3 +20,8 @@
     top: $y;
     right: $x;
 }
+
+@mixin iconCenter{
+    top: 0;
+    left: calc(50% - 5rem);
+}

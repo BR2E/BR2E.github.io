@@ -1,0 +1,23 @@
+.descripcion{
+   position: relative;
+   @include crearFlex;
+   flex-direction: column;
+   &__iconSetting{
+      position: absolute;
+      width: 10rem;
+      margin-bottom: 10rem;
+   }
+   &__title{
+      margin: 15rem 0 3rem;
+      font-size: 3rem;
+      color: $verde;
+      letter-spacing: 1rem;
+   }
+   &__text{
+      font-size: 1.6rem;
+      color: $verde;
+      text-align: center;
+      padding: 0 3rem;
+      opacity: 0.7;
+   }
+}
