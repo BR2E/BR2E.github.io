@@ -362,4 +362,64 @@ html {
   background-size: cover;
 }
 
+.footer {
+  background-color: rgba(2, 210, 143, 0.4);
+  padding: 2rem 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__portafolio {
+  font-size: 3rem;
+  color: #02D28F;
+  letter-spacing: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  margin: 3rem 0 1rem;
+  color: #fdeedc;
+}
+.footer__text {
+  font-size: 1.6rem;
+  color: #02D28F;
+  text-align: center;
+  padding: 0 3rem;
+  opacity: 0.7;
+  margin-bottom: 3rem;
+  color: #fdeedc;
+}
+.footer__contacto--linkWhatsapp {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-image: url("../../assets/icons/icons8-whatsapp-96.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.footer__contacto--linkFacebook {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-image: url("../../assets/icons/icons8-facebook-96.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.footer__contacto--linkGmail {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-image: url("../../assets/icons/icons8-mail-96.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */
