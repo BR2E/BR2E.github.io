@@ -210,5 +210,107 @@ html {
     grid-area: 3/1/4/3;
   }
 }
+.tecnologias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+.tecnologias__title {
+  font-size: 3rem;
+  color: #02D28F;
+  letter-spacing: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+}
+.tecnologias__icons {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(8rem, 50rem));
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+}
+.tecnologias__icons--title {
+  font-size: 1.6rem;
+  color: #02D28F;
+  text-align: center;
+  padding: 0 3rem;
+  opacity: 0.7;
+  padding: 0;
+}
+.tecnologias__icons--html {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("../../assets/icons/icons8-html-5-144.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tecnologias__icons--css {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("../../assets/icons/icons8-css3-144.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tecnologias__icons--sass {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("../../assets/icons/icons8-sass-144.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tecnologias__icons--js {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("../../assets/icons/icons8-javascript-144.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tecnologias__icons--webp {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("../../assets/icons/icons8-webpack-144.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tecnologias__icons--tyJs {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("../../assets/icons/icons8-typescript-96.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tecnologias__icons--react {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("../../assets/icons/icons8-react-200.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tecnologias__icons--git {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("../../assets/icons/icons8-git-144.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*# sourceMappingURL=main.css.map */

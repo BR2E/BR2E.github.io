@@ -1,0 +1,56 @@
+.tecnologias {
+    @include crearFlex;
+    flex-direction: column;
+    margin-top: 10rem;
+
+    &__title {
+        @include title;
+        font-size: 2.4rem;
+    }
+
+    &__icons {
+        margin-top: 6rem;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(8rem, 50rem));
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icons--title {
+        @include textDescription;
+        padding: 0;
+    }
+
+    &__icons--html {
+        @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-html-5-144.png')
+    }
+
+    &__icons--css {
+        @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-css3-144.png')
+    }
+
+    &__icons--sass {
+        @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-sass-144.png')
+    }
+
+    &__icons--js {
+        @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-javascript-144.png')
+    }
+
+    &__icons--webp {
+        @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-webpack-144.png')
+    }
+
+    &__icons--tyJs {
+        @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-typescript-96.png')
+    }
+
+    &__icons--react {
+        @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-react-200.png')
+    }
+
+    &__icons--git {
+        @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-git-144.png')
+    }
+}

@@ -21,19 +21,19 @@
     right: $x;
 }
 
-@mixin iconCenter{
+@mixin iconCenter {
     top: 0;
     left: calc(50% - 5rem);
 }
 
-@mixin title{
+@mixin title {
     font-size: 3rem;
     color: $verde;
     letter-spacing: 1rem;
     font-family: $fuente1;
 }
 
-@mixin textDescription{
+@mixin textDescription {
     font-size: 1.6rem;
     color: $verde;
     text-align: center;
@@ -41,7 +41,17 @@
     opacity: 0.7;
 }
 
-@mixin iconProyectos{
+@mixin iconProyectos {
     width: 15rem;
     margin: 8rem 0 10rem;
+}
+
+@mixin iconSpanFondo($x, $y, $url) {
+    display: inline-block;
+    width: $x;
+    height: $y;
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
