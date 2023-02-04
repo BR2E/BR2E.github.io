@@ -14,4 +14,31 @@
         @include crearFlex;
         flex-direction: column;
     }
+
+    &__info--description {
+        @include textDescription;
+        margin-top: 5rem;
+        padding: 0 1rem;
+    }
+
+    &__info--description a {
+        color: $beige;
+        font-size: 1.8rem;
+    }
+
+    &__js {
+        display: grid;
+        grid-template-columns: 30rem;
+        grid-template-rows: repeat(5, 13rem);
+        gap: 4rem;
+        margin: 10rem 0;
+    }
+
+    &__js--img {
+        width: 100%;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
 }
+
