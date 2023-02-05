@@ -1,32 +1,41 @@
 .footer {
-    background-color:rgba(2, 210, 143,0.4);
+    background-color: rgba(2, 210, 143, 0.4);
     padding: 2rem 0 3rem;
     @include crearFlex;
     flex-direction: column;
-    &__portafolio{
+
+    &__portafolio {
         @include title;
         font-size: 2.4rem;
         margin: 3rem 0 1rem;
         color: $beige;
     }
-    &__text{
+
+    &__text {
         @include textDescription;
         margin-bottom: 3rem;
         color: $beige;
     }
-    &__contacto--linkWhatsapp{
-        @include iconSpanFondo(4rem,4rem,'../../assets/icons/icons8-whatsapp-96.png');
-        margin: 0 1rem;
-        cursor: pointer;
-     }
-     &__contacto--linkFacebook{
-        @include iconSpanFondo(4rem,4rem,'../../assets/icons/icons8-facebook-96.png');
-        margin: 0 1rem;
-        cursor: pointer;
-     }
-     &__contacto--linkGmail{
-        @include iconSpanFondo(4rem,4rem,'../../assets/icons/icons8-mail-96.png');
-        margin: 0 1rem;
-        cursor: pointer;
-     }
+
+    &__lista {
+        list-style: none;
+        @include textDescription;
+    }
+
+    &__lista--whatsapp {
+        color: #000;
+        font-weight: 400;
+    }
+
+    &__lista--whatsapp span {
+        color: $beige;
+        opacity: 1;
+    }
+
+    &__lista--facebook{
+        margin: 1rem;
+    }
+    &__lista--facebook a{
+        color: $beige;
+    }
 }

@@ -205,19 +205,19 @@ html {
   font-family: "Roboto", sans-serif;
 }
 .proyectos__js {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 .proyectos__info--description {
+  margin-top: 5rem;
+  padding: 0 1rem;
   font-size: 1.6rem;
   color: #02D28F;
   text-align: center;
   padding: 0 3rem;
   opacity: 0.7;
-  margin-top: 5rem;
-  padding: 0 1rem;
 }
 .proyectos__info--description a {
   color: #fdeedc;
@@ -232,7 +232,7 @@ html {
 }
 .proyectos__js--img {
   width: 100%;
-  border: none;
+  border: 1px solid #02D28F;
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -244,9 +244,6 @@ html {
     gap: 4rem;
     justify-content: center;
   }
-  .proyectos__js--img5 {
-    grid-area: 3/1/4/3;
-  }
 }
 @media (min-width: 1100px) {
   .proyectos__js {
@@ -254,9 +251,6 @@ html {
     grid-template-rows: repeat(2, 23rem) auto;
     gap: 4rem;
     justify-content: center;
-  }
-  .proyectos__js--img5 {
-    grid-area: 3/1/4/3;
   }
 }
 .tecnologias {
@@ -388,38 +382,27 @@ html {
   margin-bottom: 3rem;
   color: #fdeedc;
 }
-.footer__contacto--linkWhatsapp {
-  display: inline-block;
-  width: 4rem;
-  height: 4rem;
-  background-image: url("../../assets/icons/icons8-whatsapp-96.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 1rem;
-  cursor: pointer;
+.footer__lista {
+  list-style: none;
+  font-size: 1.6rem;
+  color: #02D28F;
+  text-align: center;
+  padding: 0 3rem;
+  opacity: 0.7;
 }
-.footer__contacto--linkFacebook {
-  display: inline-block;
-  width: 4rem;
-  height: 4rem;
-  background-image: url("../../assets/icons/icons8-facebook-96.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 1rem;
-  cursor: pointer;
+.footer__lista--whatsapp {
+  color: #000;
+  font-weight: 400;
 }
-.footer__contacto--linkGmail {
-  display: inline-block;
-  width: 4rem;
-  height: 4rem;
-  background-image: url("../../assets/icons/icons8-mail-96.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 1rem;
-  cursor: pointer;
+.footer__lista--whatsapp span {
+  color: #fdeedc;
+  opacity: 1;
+}
+.footer__lista--facebook {
+  margin: 1rem;
+}
+.footer__lista--facebook a {
+  color: #fdeedc;
 }
 
 .ventanaContacto {
@@ -475,6 +458,7 @@ html {
 .ventanaContacto__text--numero {
   display: block;
   margin-top: 2rem;
+  color: #fdeedc;
 }
 
 .ventanaCerrar {

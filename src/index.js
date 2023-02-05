@@ -7,7 +7,6 @@ const ventanaFondo = document.getElementById('ventanaFondo');
 const ventanaWhatsapp = document.getElementById('ventanaContactoWhatsapp');
 
 const btnWhatsapp = document.getElementById('whatsapp');
-const btnFacebook = document.getElementById('facebook');
 const btnGmail = document.getElementById('gmail');
 
 const btnCerrarWhatsapp = document.getElementById('btnCloseWhatsapp');
@@ -22,6 +21,8 @@ function abrirVentanaWhatsapp() {
     ventanaWhatsapp.classList.remove('inactive');
     ventanaFondo.classList.remove('inactive');
 }
+
+
 
 btnCerrarWhatsapp.addEventListener('click', cerrarVentanaWhatsapp, false);
 btnWhatsapp.addEventListener('click', abrirVentanaWhatsapp, false);

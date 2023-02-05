@@ -11,14 +11,14 @@
     }
 
     &__js {
-        @include crearFlex;
         flex-direction: column;
+        @include crearFlex;
     }
 
     &__info--description {
-        @include textDescription;
         margin-top: 5rem;
         padding: 0 1rem;
+        @include textDescription;
     }
 
     &__info--description a {
@@ -36,7 +36,7 @@
 
     &__js--img {
         width: 100%;
-        border: none;
+        border: 1px solid $verde;
         border-radius: 1rem;
         cursor: pointer;
     }
