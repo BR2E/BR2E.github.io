@@ -13,7 +13,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
 
 
     <header class="header">
@@ -74,12 +74,21 @@
             <div class="descripcion__contacto">
                 <h2 class="descripcion__contacto--title">Contactame</h2>
                 <div class="descripcion__contacto--link">
-                    <span class="descripcion__contacto--linkWhatsapp"></span>
-                    <span class="descripcion__contacto--linkFacebook"></span>
-                    <span class="descripcion__contacto--linkGmail"></span>
+                    <span class="descripcion__contacto--linkWhatsapp" id="whatsapp"></span>
+                    <span class="descripcion__contacto--linkFacebook" id="facebook"></span>
+                    <span class="descripcion__contacto--linkGmail" id="gmail"></span>
                 </div>
             </div>
         </section>
+
+        <div class="ventanaCerrar inactive" id="ventanaFondo"></div>
+        
+        <div class="ventanaContacto inactive" id="ventanaContactoWhatsapp">
+            <span class="ventanaContacto__iconClose" id="btnCloseWhatsapp"></span>
+            <h2 class="ventanaContacto__title">Contacto whatsapp</h2>
+            <p class="ventanaContacto__text">Si estas en un dispositivo con Whatsapp instalado da click <a href="https://wa.me/qr/WSTEETV77NMYB1" class="ventanaContacto__text--link">Aqui</a>
+            <span class="ventanaContacto__text--espacio"></span> Si no puedes mandar un mensaje al numero <span class="ventanaContacto__text--numero">+52 6442 52 66 44</span></p>
+        </div>
 
         <section class="tecnologias">
             <h2 class="tecnologias__title">Tecnologias</h2>

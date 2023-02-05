@@ -422,4 +422,72 @@ html {
   cursor: pointer;
 }
 
+.ventanaContacto {
+  width: 30rem;
+  height: 80%;
+  position: fixed;
+  top: 0;
+  left: calc(50% - 15rem);
+  background-color: #333;
+  border: 1px solid #02D28F;
+  border-radius: 1rem;
+  margin: 5rem auto;
+  z-index: 2;
+}
+.ventanaContacto__iconClose {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: inline-block;
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background-image: url("../../assets/icons/icons8-close-64.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ventanaContacto__title {
+  font-size: 3rem;
+  color: #02D28F;
+  letter-spacing: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin-top: 7rem;
+  text-align: center;
+}
+.ventanaContacto__text {
+  font-size: 1.6rem;
+  color: #02D28F;
+  text-align: center;
+  padding: 0 3rem;
+  opacity: 0.7;
+  padding: 0 2rem;
+  margin-top: 3rem;
+}
+.ventanaContacto__text--link {
+  color: #fdeedc;
+}
+.ventanaContacto__text--espacio {
+  display: block;
+  margin-top: 3rem;
+}
+.ventanaContacto__text--numero {
+  display: block;
+  margin-top: 2rem;
+}
+
+.ventanaCerrar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.inactive {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
