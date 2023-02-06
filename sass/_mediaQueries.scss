@@ -28,7 +28,7 @@
 
 }
 
-@media (min-width:500px) and (orientation:landscape)  {
+@media (max-height:350px) and (orientation:landscape) {
     .header__arrow--bottom1 {
         left: 1rem;
         bottom: 1rem;
@@ -37,6 +37,19 @@
     .header__arrow--bottom2 {
         right: 1rem;
         bottom: 1rem;
+    }
+
+    .ventanasProyectos__portafolio {
+        @include ventanaEmergente;
+        width: 50rem;
+        left: calc(50% - 25rem);
+    }
+
+    .ventanasProyectos__portafolio--tilte {
+        margin: 3rem 0 1rem;
+        text-align: center;
+        @include title;
+        font-size: 2rem;
     }
 
 }

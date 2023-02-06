@@ -1,49 +1,44 @@
-.ventanaContacto{
-    width: 30rem;
-    height: 95%;
-    min-height:320px;
-    position: fixed;
-    top: 0;
-    left: calc(50% - 15rem);
-    background-color: #333;
-    border: 1px solid $verde;
-    border-radius: 1rem;
-    margin: 1rem auto;
-    z-index: 2;
+.ventanaContacto {
+    @include ventanaEmergente;
 
-    &__iconClose{
+    &__iconClose {
         position: absolute;
         right: 1rem;
         top: 1rem;
         display: inline-block;
-        @include iconSpanFondo(5rem,5rem,'../../assets/icons/icons8-close-64.png');
+        @include iconSpanFondo(5rem, 5rem, '../../assets/icons/icons8-close-64.png');
     }
-    &__title{
+
+    &__title {
         @include title;
         font-size: 2rem;
         margin-top: 7rem;
         text-align: center;
     }
-    &__text{
+
+    &__text {
         @include textDescription;
         padding: 0 2rem;
         margin-top: 3rem;
     }
-    &__text--link{
+
+    &__text--link {
         color: $beige;
     }
-    &__text--espacio{
+
+    &__text--espacio {
         display: block;
         margin-top: 3rem;
     }
-    &__text--numero{
+
+    &__text--numero {
         display: block;
         margin-top: 2rem;
         color: $beige;
     }
 }
 
-.ventanaCerrar{
+.ventanaCerrar {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -53,6 +48,6 @@
 }
 
 
-.inactive{
+.inactive {
     display: none;
 }

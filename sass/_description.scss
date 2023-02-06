@@ -2,13 +2,8 @@
    position: relative;
    @include crearFlex;
    flex-direction: column;
-   &__iconSetting{
-      position: absolute;
-      width: 10rem;
-      margin-bottom: 30rem;
-   }
    &__title{
-      margin: 20rem 0 3rem;
+      margin: 6rem 0 3rem;
       @include title;
       text-align: center;
       font-size: 2rem;

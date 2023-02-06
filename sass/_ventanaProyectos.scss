@@ -1,0 +1,31 @@
+.ventanasProyectos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    &__portafolio {
+        @include ventanaEmergente;
+    }
+    &__portafolio--tilte{
+        margin: 7rem 0 2rem;
+        text-align: center;
+        @include title;
+    }
+    &__portafolio--tecnologias{
+        font-size: 2rem;
+        @include textDescription;
+    }
+    &__portafolio--lista{
+        @include textDescription;
+        text-align: start;
+        margin-top: 2rem;
+    }
+    &__portafolio--text{
+        margin-top: 2rem;
+        @include textDescription;
+        text-align: justify;
+    }
+}
