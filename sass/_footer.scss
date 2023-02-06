@@ -11,9 +11,14 @@
         color: $beige;
     }
 
-    &__text {
+    &__text{
         @include textDescription;
         margin-bottom: 3rem;
+        color: $beige;
+    }
+    &__correo {
+        @include textDescription;
+        margin-bottom: 1rem;
         color: $beige;
     }
 
@@ -23,13 +28,7 @@
     }
 
     &__lista--whatsapp {
-        color: #000;
-        font-weight: 400;
-    }
-
-    &__lista--whatsapp span {
         color: $beige;
-        opacity: 1;
     }
 
     &__lista--facebook{

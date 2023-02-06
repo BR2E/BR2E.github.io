@@ -46,6 +46,7 @@ html {
 }
 .header__arrow--bottom1 {
   width: 100px;
+  min-width: 3rem;
   position: absolute;
   bottom: 5rem;
 }
@@ -244,6 +245,13 @@ html {
     gap: 4rem;
     justify-content: center;
   }
+  .ventanaContacto {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+  .ventanaContacto__title {
+    margin-top: 9rem;
+  }
 }
 @media (min-width: 1100px) {
   .proyectos__js {
@@ -251,6 +259,16 @@ html {
     grid-template-rows: repeat(2, 23rem) auto;
     gap: 4rem;
     justify-content: center;
+  }
+}
+@media (min-width: 500px) and (orientation: landscape) {
+  .header__arrow--bottom1 {
+    left: 1rem;
+    bottom: 1rem;
+  }
+  .header__arrow--bottom2 {
+    right: 1rem;
+    bottom: 1rem;
   }
 }
 .tecnologias {
@@ -382,6 +400,15 @@ html {
   margin-bottom: 3rem;
   color: #fdeedc;
 }
+.footer__correo {
+  font-size: 1.6rem;
+  color: #02D28F;
+  text-align: center;
+  padding: 0 3rem;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+  color: #fdeedc;
+}
 .footer__lista {
   list-style: none;
   font-size: 1.6rem;
@@ -391,12 +418,7 @@ html {
   opacity: 0.7;
 }
 .footer__lista--whatsapp {
-  color: #000;
-  font-weight: 400;
-}
-.footer__lista--whatsapp span {
   color: #fdeedc;
-  opacity: 1;
 }
 .footer__lista--facebook {
   margin: 1rem;
@@ -407,14 +429,15 @@ html {
 
 .ventanaContacto {
   width: 30rem;
-  height: 80%;
+  height: 95%;
+  min-height: 320px;
   position: fixed;
   top: 0;
   left: calc(50% - 15rem);
   background-color: #333;
   border: 1px solid #02D28F;
   border-radius: 1rem;
-  margin: 5rem auto;
+  margin: 1rem auto;
   z-index: 2;
 }
 .ventanaContacto__iconClose {
@@ -472,6 +495,40 @@ html {
 
 .inactive {
   display: none;
+}
+
+@media (min-width: 760px) {
+  .proyectos__js {
+    grid-template-columns: repeat(2, 35rem);
+    grid-template-rows: repeat(2, 15rem) auto;
+    gap: 4rem;
+    justify-content: center;
+  }
+  .ventanaContacto {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+  .ventanaContacto__title {
+    margin-top: 9rem;
+  }
+}
+@media (min-width: 1100px) {
+  .proyectos__js {
+    grid-template-columns: repeat(2, 55rem);
+    grid-template-rows: repeat(2, 23rem) auto;
+    gap: 4rem;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) and (orientation: landscape) {
+  .header__arrow--bottom1 {
+    left: 1rem;
+    bottom: 1rem;
+  }
+  .header__arrow--bottom2 {
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

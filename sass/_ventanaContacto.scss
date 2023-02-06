@@ -1,13 +1,14 @@
 .ventanaContacto{
     width: 30rem;
-    height: 80%;
+    height: 95%;
+    min-height:320px;
     position: fixed;
     top: 0;
     left: calc(50% - 15rem);
     background-color: #333;
     border: 1px solid $verde;
     border-radius: 1rem;
-    margin: 5rem auto;
+    margin: 1rem auto;
     z-index: 2;
 
     &__iconClose{
