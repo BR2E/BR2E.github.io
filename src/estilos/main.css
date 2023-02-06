@@ -13,6 +13,10 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: #fdeedc;
+}
+
 .header {
   width: 100%;
   height: 100vh;
@@ -135,6 +139,20 @@ html {
   padding: 0 3rem;
   opacity: 0.7;
 }
+.descripcion__perfilPlatzi {
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  background-color: #02D28F;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  border: 1px solid #02D28F;
+  font-size: 1.8rem;
+  color: #333;
+}
+.descripcion__perfilPlatzi:hover {
+  color: #02D28F;
+  background-color: #333;
+}
 .descripcion__contacto {
   margin-top: 5rem;
 }
@@ -247,6 +265,15 @@ html {
   .ventanaContacto__title {
     margin-top: 9rem;
   }
+  .ventanasProyectos__portafolio,
+  .ventanasProyectos__tInteractiva,
+  .ventanasProyectos__loopstudios,
+  .ventanasProyectos__formContacto,
+  .ventanasProyectos__formProgramar,
+  .ventanasProyectos__adivinaNumero {
+    width: 50rem;
+    left: calc(50% - 25rem);
+  }
 }
 @media (min-width: 1100px) {
   .proyectos__js {
@@ -254,6 +281,12 @@ html {
     grid-template-rows: repeat(2, 23rem) auto;
     gap: 4rem;
     justify-content: center;
+  }
+  .descripcion__text {
+    font-size: 1.8rem;
+  }
+  .proyectos__info--description {
+    font-size: 1.8rem;
   }
 }
 @media (max-height: 350px) and (orientation: landscape) {
@@ -265,22 +298,21 @@ html {
     right: 1rem;
     bottom: 1rem;
   }
-  .ventanasProyectos__portafolio {
-    width: 30rem;
-    height: 95%;
-    min-height: 320px;
-    position: fixed;
-    top: 0;
-    left: calc(50% - 15rem);
-    background-color: #333;
-    border: 1px solid #02D28F;
-    border-radius: 1rem;
-    margin: 1rem auto;
-    z-index: 2;
-    width: 50rem;
-    left: calc(50% - 25rem);
+  .ventanasProyectos__portafolio,
+  .ventanasProyectos__tInteractiva,
+  .ventanasProyectos__loopstudios,
+  .ventanasProyectos__formContacto,
+  .ventanasProyectos__formProgramar,
+  .ventanasProyectos__adivinaNumero {
+    width: 55rem;
+    left: calc(50% - 27.5rem);
   }
-  .ventanasProyectos__portafolio--tilte {
+  .ventanasProyectos__portafolio--tilte,
+  .ventanasProyectos__tInteractiva--tilte,
+  .ventanasProyectos__loopstudios--tilte,
+  .ventanasProyectos__formContacto--tilte,
+  .ventanasProyectos__formProgramar--tilte,
+  .ventanasProyectos__adivinaNumero--tilte {
     margin: 3rem 0 1rem;
     text-align: center;
     font-size: 3rem;
@@ -392,6 +424,24 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.tecnologias__icons--npm {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("../../assets/icons/icons8-npm-96.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tecnologias__icons--terminal {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("../../assets/icons/icons8-console-50.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .footer {
   background-color: rgba(2, 210, 143, 0.4);
@@ -471,6 +521,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 .ventanaContacto__title {
   font-size: 3rem;
@@ -510,6 +561,7 @@ html {
   top: 0;
   left: 0;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .inactive {
@@ -524,7 +576,7 @@ html {
   height: 100%;
   z-index: 1;
 }
-.ventanasProyectos__portafolio {
+.ventanasProyectos__portafolio, .ventanasProyectos__tInteractiva, .ventanasProyectos__loopstudios, .ventanasProyectos__formContacto, .ventanasProyectos__formProgramar, .ventanasProyectos__adivinaNumero {
   width: 30rem;
   height: 95%;
   min-height: 320px;
@@ -537,7 +589,7 @@ html {
   margin: 1rem auto;
   z-index: 2;
 }
-.ventanasProyectos__portafolio--tilte {
+.ventanasProyectos__portafolio--tilte, .ventanasProyectos__tInteractiva--tilte, .ventanasProyectos__loopstudios--tilte, .ventanasProyectos__formContacto--tilte, .ventanasProyectos__formProgramar--tilte, .ventanasProyectos__adivinaNumero--tilte {
   margin: 7rem 0 2rem;
   text-align: center;
   font-size: 3rem;
@@ -545,7 +597,7 @@ html {
   letter-spacing: 1rem;
   font-family: "Roboto", sans-serif;
 }
-.ventanasProyectos__portafolio--tecnologias {
+.ventanasProyectos__portafolio--tecnologias, .ventanasProyectos__tInteractiva--tecnologias, .ventanasProyectos__loopstudios--tecnologias, .ventanasProyectos__formContacto--tecnologias, .ventanasProyectos__formProgramar--tecnologias, .ventanasProyectos__adivinaNumero--tecnologias {
   font-size: 2rem;
   font-size: 1.6rem;
   color: #02D28F;
@@ -553,7 +605,7 @@ html {
   padding: 0 3rem;
   opacity: 0.7;
 }
-.ventanasProyectos__portafolio--lista {
+.ventanasProyectos__portafolio--lista, .ventanasProyectos__tInteractiva--lista, .ventanasProyectos__loopstudios--lista, .ventanasProyectos__formContacto--lista, .ventanasProyectos__formProgramar--lista, .ventanasProyectos__adivinaNumero--lista {
   font-size: 1.6rem;
   color: #02D28F;
   text-align: center;
@@ -562,7 +614,7 @@ html {
   text-align: start;
   margin-top: 2rem;
 }
-.ventanasProyectos__portafolio--text {
+.ventanasProyectos__portafolio--text, .ventanasProyectos__tInteractiva--text, .ventanasProyectos__loopstudios--text, .ventanasProyectos__formContacto--text, .ventanasProyectos__formProgramar--text, .ventanasProyectos__adivinaNumero--text {
   margin-top: 2rem;
   font-size: 1.6rem;
   color: #02D28F;
@@ -586,6 +638,15 @@ html {
   .ventanaContacto__title {
     margin-top: 9rem;
   }
+  .ventanasProyectos__portafolio,
+  .ventanasProyectos__tInteractiva,
+  .ventanasProyectos__loopstudios,
+  .ventanasProyectos__formContacto,
+  .ventanasProyectos__formProgramar,
+  .ventanasProyectos__adivinaNumero {
+    width: 50rem;
+    left: calc(50% - 25rem);
+  }
 }
 @media (min-width: 1100px) {
   .proyectos__js {
@@ -593,6 +654,12 @@ html {
     grid-template-rows: repeat(2, 23rem) auto;
     gap: 4rem;
     justify-content: center;
+  }
+  .descripcion__text {
+    font-size: 1.8rem;
+  }
+  .proyectos__info--description {
+    font-size: 1.8rem;
   }
 }
 @media (max-height: 350px) and (orientation: landscape) {
@@ -604,22 +671,21 @@ html {
     right: 1rem;
     bottom: 1rem;
   }
-  .ventanasProyectos__portafolio {
-    width: 30rem;
-    height: 95%;
-    min-height: 320px;
-    position: fixed;
-    top: 0;
-    left: calc(50% - 15rem);
-    background-color: #333;
-    border: 1px solid #02D28F;
-    border-radius: 1rem;
-    margin: 1rem auto;
-    z-index: 2;
-    width: 50rem;
-    left: calc(50% - 25rem);
+  .ventanasProyectos__portafolio,
+  .ventanasProyectos__tInteractiva,
+  .ventanasProyectos__loopstudios,
+  .ventanasProyectos__formContacto,
+  .ventanasProyectos__formProgramar,
+  .ventanasProyectos__adivinaNumero {
+    width: 55rem;
+    left: calc(50% - 27.5rem);
   }
-  .ventanasProyectos__portafolio--tilte {
+  .ventanasProyectos__portafolio--tilte,
+  .ventanasProyectos__tInteractiva--tilte,
+  .ventanasProyectos__loopstudios--tilte,
+  .ventanasProyectos__formContacto--tilte,
+  .ventanasProyectos__formProgramar--tilte,
+  .ventanasProyectos__adivinaNumero--tilte {
     margin: 3rem 0 1rem;
     text-align: center;
     font-size: 3rem;

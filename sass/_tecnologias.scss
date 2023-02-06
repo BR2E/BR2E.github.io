@@ -53,4 +53,12 @@
     &__icons--git {
         @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-git-144.png')
     }
+
+    &__icons--npm {
+        @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-npm-96.png')
+    }
+
+    &__icons--terminal {
+        @include iconSpanFondo(7rem, 7rem, '../../assets/icons/icons8-console-50.png')
+    }
 }

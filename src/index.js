@@ -3,52 +3,38 @@ header();
 
 
 
-const ventanaFondo = document.getElementById('ventanaFondo');
-const ventanaWhatsapp = document.getElementById('ventanaContactoWhatsapp');
-const btnWhatsapp = document.getElementById('whatsapp');
-const btnCerrarWhatsapp = document.getElementById('btnCloseWhatsapp');
+function toggleVentana(idFondo, ventana, btnAbrirVentana, btnCerrar) {
+    const idFondo1 = document.getElementById(idFondo);
+    const ventana1 = document.getElementById(ventana);
+    const btnAbrirVentana1 = document.getElementById(btnAbrirVentana);
+    const btnCerrar1 = document.getElementById(btnCerrar);
+
+    function cerrarVentana() {
+        ventana1.classList.add('inactive');
+        idFondo1.classList.add('inactive');
+    }
+
+    function abrirVentana() {
+        ventana1.classList.remove('inactive');
+        idFondo1.classList.remove('inactive');
+    }
 
 
-function cerrarVentanaWhatsapp() {
-    ventanaWhatsapp.classList.add('inactive');
-    ventanaFondo.classList.add('inactive');
+    btnCerrar1.addEventListener('click', cerrarVentana, false);
+    btnAbrirVentana1.addEventListener('click', abrirVentana, false);
+
+    idFondo1.addEventListener('click', () => {
+        ventana1.classList.add('inactive');
+        idFondo1.classList.add('inactive');
+    }, false);
+
+
 }
 
-function abrirVentanaWhatsapp() {
-    ventanaWhatsapp.classList.remove('inactive');
-    ventanaFondo.classList.remove('inactive');
-}
-
-
-btnCerrarWhatsapp.addEventListener('click', cerrarVentanaWhatsapp, false);
-btnWhatsapp.addEventListener('click', abrirVentanaWhatsapp, false);
-
-ventanaFondo.addEventListener('click', () => {
-    ventanaWhatsapp.classList.add('inactive');
-    ventanaFondo.classList.add('inactive');
-}, false);
-
-
-const ventanaFondoProyectos = document.getElementById('ventanasProyectos');
-const ventanaPortafolio = document.getElementById('ventanasProyectosPortafolio');
-const btnPortafolio = document.getElementById('btnPortafolio');
-const btnCloseProyecto1 = document.getElementById('btnCloseProyecto1');
-
-btnPortafolio.addEventListener('click', () => {
-    ventanaFondoProyectos.classList.remove('inactive');
-    ventanaPortafolio.classList.remove('inactive');
-}, false);
-
-btnCloseProyecto1.addEventListener('click', () => {
-    ventanaFondoProyectos.classList.add('inactive');
-    ventanaPortafolio.classList.add('inactive');
-}, false);
-
-
-
-ventanaFondoProyectos.addEventListener('click', () => {
-    ventanaFondoProyectos.classList.add('inactive');
-    ventanaPortafolio.classList.add('inactive');
-}, false);
-
-
+toggleVentana('ventanaFondo', 'ventanaContactoWhatsapp', 'whatsapp', 'btnCloseWhatsapp');
+toggleVentana('ventanaFondoProyectos1', 'ventanasProyectosPortafolio', 'btnPortafolio', 'btnCloseProyecto1');
+toggleVentana('ventanaFondoProyectos2', 'ventanasProyectostInteractiva', 'btnTInteractiva', 'btnCloseProyecto2');
+toggleVentana('ventanaFondoProyectos3', 'ventanasProyectosLoopstudios', 'btnLoopstudios', 'btnCloseProyecto3');
+toggleVentana('ventanaFondoProyectos4', 'ventanasProyectosFormContacto', 'btnFormContacto', 'btnCloseProyecto4');
+toggleVentana('ventanaFondoProyectos5', 'ventanasProyectosFormProgramar', 'btnFormProgramar', 'btnCloseProyecto5');
+toggleVentana('ventanaFondoProyectos6', 'ventanasProyectosAdivinaNumero', 'btnAprendeProgramar', 'btnCloseProyecto6');

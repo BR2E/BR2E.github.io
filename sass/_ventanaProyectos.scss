@@ -6,24 +6,53 @@
     height: 100%;
     z-index: 1;
 
-    &__portafolio {
+    &__portafolio,
+    &__tInteractiva,
+    &__loopstudios,
+    &__formContacto,
+    &__formProgramar,
+    &__adivinaNumero {
         @include ventanaEmergente;
     }
-    &__portafolio--tilte{
+
+    &__portafolio--tilte,
+    &__tInteractiva--tilte,
+    &__loopstudios--tilte,
+    &__formContacto--tilte,
+    &__formProgramar--tilte,
+    &__adivinaNumero--tilte {
         margin: 7rem 0 2rem;
         text-align: center;
         @include title;
     }
-    &__portafolio--tecnologias{
+
+    &__portafolio--tecnologias,
+    &__tInteractiva--tecnologias,
+    &__loopstudios--tecnologias,
+    &__formContacto--tecnologias,
+    &__formProgramar--tecnologias,
+    &__adivinaNumero--tecnologias {
         font-size: 2rem;
         @include textDescription;
     }
-    &__portafolio--lista{
+
+    &__portafolio--lista,
+    &__tInteractiva--lista,
+    &__loopstudios--lista,
+    &__formContacto--lista,
+    &__formProgramar--lista,
+    &__adivinaNumero--lista {
         @include textDescription;
         text-align: start;
         margin-top: 2rem;
     }
-    &__portafolio--text{
+
+    &__portafolio--text,
+    &__tInteractiva--text,
+    &__loopstudios--text,
+    &__formContacto--text,
+    &__formProgramar--text,
+    &__adivinaNumero--text {
         margin-top: 2rem;
         @include textDescription;
         text-align: justify;

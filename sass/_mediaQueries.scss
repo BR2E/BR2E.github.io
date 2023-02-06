@@ -15,6 +15,17 @@
         margin-top: 9rem;
     }
 
+    .ventanasProyectos__portafolio,
+    .ventanasProyectos__tInteractiva,
+    .ventanasProyectos__loopstudios,
+    .ventanasProyectos__formContacto,
+    .ventanasProyectos__formProgramar,
+    .ventanasProyectos__adivinaNumero {
+        width: 50rem;
+        left: calc(50% - 25rem);
+    }
+
+
 
 }
 
@@ -24,6 +35,14 @@
         grid-template-rows: repeat(2, 23rem) auto;
         gap: 4rem;
         justify-content: center;
+    }
+
+    .descripcion__text {
+        font-size: 1.8rem;
+    }
+
+    .proyectos__info--description {
+        font-size: 1.8rem;
     }
 
 }
@@ -39,17 +58,27 @@
         bottom: 1rem;
     }
 
-    .ventanasProyectos__portafolio {
-        @include ventanaEmergente;
-        width: 50rem;
-        left: calc(50% - 25rem);
+    .ventanasProyectos__portafolio,
+    .ventanasProyectos__tInteractiva,
+    .ventanasProyectos__loopstudios,
+    .ventanasProyectos__formContacto,
+    .ventanasProyectos__formProgramar,
+    .ventanasProyectos__adivinaNumero {
+        width: 55rem;
+        left: calc(50% - 27.5rem);
     }
 
-    .ventanasProyectos__portafolio--tilte {
+    .ventanasProyectos__portafolio--tilte,
+    .ventanasProyectos__tInteractiva--tilte,
+    .ventanasProyectos__loopstudios--tilte,
+    .ventanasProyectos__formContacto--tilte,
+    .ventanasProyectos__formProgramar--tilte,
+    .ventanasProyectos__adivinaNumero--tilte {
         margin: 3rem 0 1rem;
         text-align: center;
         @include title;
         font-size: 2rem;
     }
+
 
 }
