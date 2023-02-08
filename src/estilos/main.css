@@ -138,6 +138,7 @@ a {
   text-align: center;
   padding: 0 3rem;
   opacity: 0.7;
+  font-size: 1.8rem;
 }
 .descripcion__perfilPlatzi {
   margin-top: 3rem;
@@ -232,6 +233,7 @@ a {
   text-align: center;
   padding: 0 3rem;
   opacity: 0.7;
+  font-size: 1.8rem;
 }
 .proyectos__info--description a {
   color: #fdeedc;
@@ -604,6 +606,7 @@ a {
   text-align: center;
   padding: 0 3rem;
   opacity: 0.7;
+  font-size: 1.8rem;
 }
 .ventanasProyectos__portafolio--lista, .ventanasProyectos__tInteractiva--lista, .ventanasProyectos__loopstudios--lista, .ventanasProyectos__formContacto--lista, .ventanasProyectos__formProgramar--lista, .ventanasProyectos__adivinaNumero--lista {
   font-size: 1.6rem;
@@ -613,6 +616,7 @@ a {
   opacity: 0.7;
   text-align: start;
   margin-top: 2rem;
+  font-size: 1.8rem;
 }
 .ventanasProyectos__portafolio--text, .ventanasProyectos__tInteractiva--text, .ventanasProyectos__loopstudios--text, .ventanasProyectos__formContacto--text, .ventanasProyectos__formProgramar--text, .ventanasProyectos__adivinaNumero--text {
   margin-top: 2rem;
@@ -622,6 +626,7 @@ a {
   padding: 0 3rem;
   opacity: 0.7;
   text-align: justify;
+  font-size: 1.8rem;
 }
 
 @media (min-width: 760px) {

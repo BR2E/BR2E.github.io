@@ -34,6 +34,7 @@
     &__adivinaNumero--tecnologias {
         font-size: 2rem;
         @include textDescription;
+        font-size: 1.8rem;
     }
 
     &__portafolio--lista,
@@ -45,6 +46,7 @@
         @include textDescription;
         text-align: start;
         margin-top: 2rem;
+        font-size: 1.8rem;
     }
 
     &__portafolio--text,
@@ -56,5 +58,6 @@
         margin-top: 2rem;
         @include textDescription;
         text-align: justify;
+        font-size: 1.8rem;
     }
 }

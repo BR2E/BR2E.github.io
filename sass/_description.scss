@@ -10,6 +10,7 @@
    }
    &__text{
       @include textDescription;
+      font-size: 1.8rem;
    }
    &__perfilPlatzi{
       margin-top: 3rem;
