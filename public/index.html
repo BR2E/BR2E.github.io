@@ -246,15 +246,25 @@
 
         <div class="mensajeEmail">
             <h2 class="mensajeEmail__title">Envíame un correo</h2>
-            <form action="https://formsubmit.co//efren.br2e@gmail.com" method="POST" class="mensajeEmail__form">
+            <form action="" class="mensajeEmail__form" id="form">
                 <label for="nombreEmail">Ingresa tu nombre</label>
                 <input class="mensajeEmail__form--nombre" type="text" placeholder="Nombre" id="nombreEmail" name="name">
                 <label for="correoEmail">Ingresa tu correo electrónico</label>
                 <input class="mensajeEmail__form--email" type="text" placeholder="Correo" id="correoEmail" name="email">
+                <label for="correoEmail">Numero de telefono (opcional)</label>
+                <input class="mensajeEmail__form--telefono" type="text" placeholder="Telefono" id="telefonoEmail"
+                    name="telefono">
                 <label for="mensajeEmail">Mensaje</label>
-                <textarea class="mensajeEmail__form--mensaje" name="mensaje" id="mensajeEmail" cols="25" rows="5" placeholder="Mensaje"></textarea>
-                <button class="mensajeEmail__form--button" type="submit">Enviar</button>
+                <textarea class="mensajeEmail__form--mensaje" name="mensaje" id="mensajeEmail" cols="25" rows="5"
+                    placeholder="Mensaje"></textarea>
+                <input class="mensajeEmail__form--button" type="submit" id="button" value="Enviar mensaje">
             </form>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('8MlF4eDZmvBRoABFY')
+            </script>
         </div>
 
     </main>

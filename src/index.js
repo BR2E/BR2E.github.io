@@ -1,4 +1,5 @@
 import { header } from './modulos/header';
+
 header();
 
 
@@ -38,3 +39,25 @@ toggleVentana('ventanaFondoProyectos3', 'ventanasProyectosLoopstudios', 'btnLoop
 toggleVentana('ventanaFondoProyectos4', 'ventanasProyectosFormContacto', 'btnFormContacto', 'btnCloseProyecto4');
 toggleVentana('ventanaFondoProyectos5', 'ventanasProyectosFormProgramar', 'btnFormProgramar', 'btnCloseProyecto5');
 toggleVentana('ventanaFondoProyectos6', 'ventanasProyectosAdivinaNumero', 'btnAprendeProgramar', 'btnCloseProyecto6');
+
+
+
+
+const btn = document.getElementById('button');
+
+document.getElementById('form').addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_wf3nhub';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar mensaje';
+    }, (err) => {
+    //   btn.value = 'Send Email';
+    //   alert(JSON.stringify(err));
+    });
+});
