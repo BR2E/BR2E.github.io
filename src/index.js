@@ -44,20 +44,35 @@ toggleVentana('ventanaFondoProyectos6', 'ventanasProyectosAdivinaNumero', 'btnAp
 
 
 const btn = document.getElementById('button');
+const EmailEnviado = document.getElementById('EmailEnviado');
+const EmailError = document.getElementById('EmailError');
+const nombreEmail = document.getElementById('nombreEmail');
+const correoEmail = document.getElementById('correoEmail');
+const telefonoEmail = document.getElementById('telefonoEmail');
+const mensajeEmail = document.getElementById('mensajeEmail');
 
-document.getElementById('form').addEventListener('submit', function(event) {
-   event.preventDefault();
+document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-   btn.value = 'Enviando...';
+    btn.value = 'Enviando...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_wf3nhub';
+    const serviceID = 'default_service';
+    const templateID = 'template_wf3nhub';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Enviar mensaje';
-    }, (err) => {
-    //   btn.value = 'Send Email';
-    //   alert(JSON.stringify(err));
-    });
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.value = 'Enviar mensaje';
+            EmailEnviado.classList.remove('inactive');
+            EmailError.classList.add('inactive');
+            nombreEmail.value = '';
+            correoEmail.value = '';
+            mensajeEmail.value = '';
+            telefonoEmail.value = '';
+        }, (err) => {
+            //   btn.value = 'Send Email';
+            //   alert(JSON.stringify(err));
+            EmailError.classList.remove('inactive');
+            EmailEnviado.classList.add('inactive');
+
+        });
 });

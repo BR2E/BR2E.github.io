@@ -686,6 +686,24 @@ a {
   background-color: #02D28F;
   color: #333;
 }
+.mensajeEmail__error {
+  width: 90%;
+  background-color: #fc4b4b;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.mensajeEmail__enviado {
+  width: 100%;
+  background-color: #02D28F;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
 
 @media (min-width: 760px) {
   .proyectos__js {

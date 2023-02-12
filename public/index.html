@@ -258,7 +258,14 @@
                 <textarea class="mensajeEmail__form--mensaje" name="mensaje" id="mensajeEmail" cols="25" rows="5"
                     placeholder="Mensaje"></textarea>
                 <input class="mensajeEmail__form--button" type="submit" id="button" value="Enviar mensaje">
+                <div class="mensajeEmail__error inactive" id="EmailError">
+                    <p>Error al enviar el email</p>
+                </div>
+                <div class="mensajeEmail__enviado inactive" id="EmailEnviado">
+                    <p>Email enviado correctamente</p>
+                </div>
             </form>
+
             <script type="text/javascript"
                 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 

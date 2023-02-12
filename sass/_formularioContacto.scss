@@ -46,4 +46,22 @@
         background-color: $verde;
         color: #333;
     }
+    &__error{
+        width: 90%;
+        background-color: #fc4b4b;
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    &__enviado{
+        width: 100%;
+        background-color: $verde;
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
