@@ -1,0 +1,49 @@
+.mensajeEmail {
+    margin: 5rem 0;
+    @include crearFlex;
+    flex-direction: column;
+    &__title{
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: $verde;
+        letter-spacing: .5rem;
+    }
+    &__form {
+        @include crearFlex;
+        flex-direction: column;
+        padding: 3rem 2rem;
+        border: 1px solid $verde;
+        border-radius: 1rem;
+        width: 90%;
+    }
+    &__form label{
+        color: $verde;
+        font-size: 1.8rem;
+        margin: 3rem 0 1rem;
+    }
+    &__form input, textarea{
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 1px solid $verde;
+        outline: none;
+        font-size: 1.6rem;
+        text-align: center;
+        color: $verde;
+        background-color: #333;
+        resize: none;
+    }
+    &__form--button{
+        margin-top: 3rem;
+        padding: 1rem 5rem;
+        font-size: 1.6rem;
+        background-color: #333;
+        border: 1px solid $verde;
+        color: $verde;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    &__form--button:hover{
+        background-color: $verde;
+        color: #333;
+    }
+}

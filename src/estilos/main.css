@@ -276,6 +276,9 @@ a {
     width: 50rem;
     left: calc(50% - 25rem);
   }
+  .mensajeEmail__form input, textarea {
+    width: 500px;
+  }
 }
 @media (min-width: 1100px) {
   .proyectos__js {
@@ -542,6 +545,7 @@ a {
   opacity: 0.7;
   padding: 0 2rem;
   margin-top: 3rem;
+  font-size: 1.8rem;
 }
 .ventanaContacto__text--link {
   color: #fdeedc;
@@ -629,6 +633,60 @@ a {
   font-size: 1.8rem;
 }
 
+.mensajeEmail {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mensajeEmail__title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #02D28F;
+  letter-spacing: 0.5rem;
+}
+.mensajeEmail__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  border: 1px solid #02D28F;
+  border-radius: 1rem;
+  width: 90%;
+}
+.mensajeEmail__form label {
+  color: #02D28F;
+  font-size: 1.8rem;
+  margin: 3rem 0 1rem;
+}
+.mensajeEmail__form input, .mensajeEmail textarea {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #02D28F;
+  outline: none;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #02D28F;
+  background-color: #333;
+  resize: none;
+}
+.mensajeEmail__form--button {
+  margin-top: 3rem;
+  padding: 1rem 5rem;
+  font-size: 1.6rem;
+  background-color: #333;
+  border: 1px solid #02D28F;
+  color: #02D28F;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.mensajeEmail__form--button:hover {
+  background-color: #02D28F;
+  color: #333;
+}
+
 @media (min-width: 760px) {
   .proyectos__js {
     grid-template-columns: repeat(2, 35rem);
@@ -651,6 +709,9 @@ a {
   .ventanasProyectos__adivinaNumero {
     width: 50rem;
     left: calc(50% - 25rem);
+  }
+  .mensajeEmail__form input, textarea {
+    width: 500px;
   }
 }
 @media (min-width: 1100px) {
